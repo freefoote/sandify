@@ -15,13 +15,15 @@ import {
 } from "@/features/export/exporterSlice"
 import { selectCurrentMachine } from "@/features/machines/machinesSlice"
 import GCodeExporter from "./GCodeExporter"
+import GCodePolarExporter from "./GCodePolarExporter"
 import ScaraGCodeExporter from "./ScaraGCodeExporter"
 import SvgExporter from "./SvgExporter"
 import ThetaRhoExporter from "./ThetaRhoExporter"
-import { exporterOptions, GCODE, THETARHO, SVG, SCARA } from "./Exporter"
+import { exporterOptions, GCODE, GCODEPOLAR, THETARHO, SVG, SCARA } from "./Exporter"
 
 const exporters = {
   [GCODE]: GCodeExporter,
+  [GCODEPOLAR]: GCodePolarExporter,
   [THETARHO]: ThetaRhoExporter,
   [SVG]: SvgExporter,
   [SCARA]: ScaraGCodeExporter,

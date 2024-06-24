@@ -1,11 +1,13 @@
-export const [GCODE, THETARHO, SVG, SCARA] = [
+export const [GCODE, GCODEPOLAR, THETARHO, SVG, SCARA] = [
   "gcode",
+  "gcodepolar",
   "thetarho",
   "svg",
   "scara",
 ]
 export const exportTypes = {
-  gcode: "GCode",
+  gcode: "GCode (Cartesian)",
+  gcodepolar: "GCode (Polar)",
   thetarho: "Theta Rho",
   svg: "SVG",
   scara: "SCARA GCode (experimental)",
