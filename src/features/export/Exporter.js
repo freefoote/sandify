@@ -151,6 +151,10 @@ export default class Exporter {
   }
 
   sanitizeValue(value) {
-    return value.replace("\n", " ")
+    // This changed multi-lines back into a single line,
+    // which resulted in broken gcode. The original developer must have had a reason
+    // to do this though - hopefully we can discuss this in a pull request.
+    //return value.replace("\n", " ")
+    return value
   }
 }
